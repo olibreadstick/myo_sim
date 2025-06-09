@@ -1,0 +1,24 @@
+<mujoco model="MyoArm_v0.01">
+    <compiler meshdir=".." texturedir=".."/>
+
+
+
+    <include file="../arm/assets/myoarm_assets.xml"/>
+    <include file="../scene/myosuite_scene_noPedestal.xml"/>
+    <include file="../wheelchair/myowheelchair copy.xml"/>
+    
+    
+
+    <asset>
+        <mesh file="../myo_sim/meshes/human_lowpoly_nohand.stl" name="human_body"/>
+    </asset>
+
+    <worldbody>
+
+            <geom name="body" type="mesh" mesh="human_body" euler="0 0 3.14" contype="0" conaffinity="0"/>
+            <body name="full_body" pos="-.025 0.1 1.40">
+                <include file="../arm/assets/myoarm_body.xml"/>
+            </body>
+        
+    </worldbody>
+</mujoco>
