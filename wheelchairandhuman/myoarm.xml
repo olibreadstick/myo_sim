@@ -1,14 +1,10 @@
 <mujoco model="MyoArm_v0.01">
     <compiler meshdir=".." texturedir=".."/>
 
-
-
     <include file="../arm/assets/myoarm_assets.xml"/>
     <include file="../scene/myosuite_scene_noPedestal.xml"/>
-    <include file="../wheelchair/myowheelchair copy.xml"/>
+    <include file="../wheelchair/myowheelchair.xml"/>
     
-    
-
     <asset>
         <mesh file="../myo_sim/meshes/human_lowpoly_nohand.stl" name="human_body"/>
     </asset>
