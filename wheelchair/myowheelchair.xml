@@ -38,11 +38,11 @@
     </asset>
     <worldbody>
         <!-- <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
-        <geom type="plane" size="3 3 .01" material="grid" pos = "0 0 -1"/>
-        <geom type="sphere" size="0.05" rgba="1 0 0 1" pos="0 0 0"/> -->
-        <body name="static" pos = "0.22 0.74 0.89 " quat="0 0 0.7071 0.7071">
+        <geom type="plane" size="3 3 .01" material="grid" pos = "0 0 -1"/> -->
+        <!-- <geom type="sphere" size="0.05" rgba="1 0 0 1" pos="0 0 0"/> -->
+        <body name="static" pos = "0 0 0.89 " quat="0 0 0.7071 0.7071">
             <joint type="free"/>
-            <geom mesh="frame" material="metal"/>
+            <geom mesh="frame" material="metal" conaffinity="0" contype="0"/>
             <geom mesh="armrest1" material="orange"/>
             <geom mesh="armrest2" material="orange"/>
             <geom mesh="backrest" material="dark_blue"/>
