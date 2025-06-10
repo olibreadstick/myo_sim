@@ -51,7 +51,7 @@
             <site name="spine_1" pos="0.030 0 0" class="myotorso_marker"/>
             <site name="thoracis_spine" pos="-.018 .194 0" class="myotorso_marker"/>
             <site name="chest" pos="0.084 0.221 0" class="myotorso_marker"/>
-            <body name="arm_pos" pos="0.021 .390 0.058" euler = "4.71 3.14 0" >
+            <body name="arm_pos" pos="0.021 .390 0.058" euler = "-1.57 0 1.57" >
                 <include file="../arm/assets/myoarm_body.xml"/>
             </body>
         </body>
