@@ -10,9 +10,12 @@
 
     <include file="../scene/myosuite_scene_noPedestal.xml"/>
     <include file="../wheelchairandhuman/myotorso_abdomen_assets.xml"/>
-    <include file="../leg/assets/myolegs_assets.xml"/>
+    <include file="../wheelchairandhuman/myoarm_assets_for_wc.xml"/>
+    <include file="../wheelchairandhuman/myolegs_assets_for_wc.xml"/>
+    
     <!-- 
-    <include file="../arm/assets/myoarm_assets.xml"/>
+    
+    
     <include file= "../hand/assets/myohand_assets.xml"/>
     -->
     
@@ -21,13 +24,16 @@
     <compiler angle="radian" meshdir=".." texturedir=".."/>
     <size memory="10M"/>
 
+
     <worldbody>
         <body name="root" pos="0 0 1" euler="0 0 -1.57">
             <freejoint name="root"/>
+            <include file="../arm/assets/myoarm_body.xml"/>
             <include file="../torso/assets/myotorso_abdomen_chain.xml"/>
             <include file="../leg/assets/myolegs_chain.xml"/>
+            
             <!-- 
-            <include file="../arm/assets/myoarm_body.xml"/>
+            
             <include file="../hand/assets/myohand_body.xml"/>
             -->
         </body>
