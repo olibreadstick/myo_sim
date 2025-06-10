@@ -28,17 +28,20 @@
     <worldbody>
         <body name="root" pos="0 0 1" euler="0 0 -1.57">
             <freejoint name="root"/>
-            <include file="../torso/assets/myotorso_abdomen_chain.xml"/>
+            <include file="../wheelchairandhuman/myotorso_abdomen_chain_for_wc.xml"/>
             <include file="../leg/assets/myolegs_chain.xml"/>
             
+
             <!-- 
+            <body name="arm_pos" pos="0.021 0.390 0.058">
+                <geom name="body" type="mesh" mesh="human_body" euler="0 0 3.14" contype="0" conaffinity="0"/>
+                <include file="../arm/assets/myoarm_body.xml"/>
+            </body>
             
-            <include file="../hand/assets/myohand_body.xml"/>
+                <include file="assets/myohand_body.xml"/>
             -->
         </body>
-        <body name="arm_pos" pos="-.025 0.1 1.40">
-                <include file="../arm/assets/myoarm_body.xml"/>
-        </body>
+        
     </worldbody>
 
     <!-- <keyframe>
