@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<mujoco model="MyoSuite's Wheelchair Model (w sitting human)">
+<mujoco model="MyoSuite's Wheelchair Model (w sitting human and arm)">
 <!-- =================================================
     Copyright 2020 Vikash Kumar, Vittorio Caggiano
     Model   :: MyoLeg with abdomen (MuJoCoV2.0)
@@ -11,8 +11,11 @@
     <include file="../scene/myosuite_scene_noPedestal.xml"/>
     <include file="../wheelchairandhuman/myotorso_abdomen_assets.xml"/>
     <include file="../leg/assets/myolegs_assets.xml"/>
+    <!-- 
     <include file="../arm/assets/myoarm_assets.xml"/>
-    <include file="assets/myohand_assets.xml"/>
+    <include file= "../hand/assets/myohand_assets.xml"/>
+    -->
+    
     <include file="../wheelchair/myowheelchair.xml"/>
 
     <compiler angle="radian" meshdir=".." texturedir=".."/>
@@ -23,8 +26,10 @@
             <freejoint name="root"/>
             <include file="../torso/assets/myotorso_abdomen_chain.xml"/>
             <include file="../leg/assets/myolegs_chain.xml"/>
+            <!-- 
             <include file="../arm/assets/myoarm_body.xml"/>
-            <include file="assets/myohand_body.xml"/>
+            <include file="../hand/assets/myohand_body.xml"/>
+            -->
         </body>
     </worldbody>
 
