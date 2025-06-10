@@ -28,7 +28,6 @@
     <worldbody>
         <body name="root" pos="0 0 1" euler="0 0 -1.57">
             <freejoint name="root"/>
-            <include file="../arm/assets/myoarm_body.xml"/>
             <include file="../torso/assets/myotorso_abdomen_chain.xml"/>
             <include file="../leg/assets/myolegs_chain.xml"/>
             
@@ -36,6 +35,9 @@
             
             <include file="../hand/assets/myohand_body.xml"/>
             -->
+        </body>
+        <body name="arm_pos" pos="-.025 0.1 1.40">
+                <include file="../arm/assets/myoarm_body.xml"/>
         </body>
     </worldbody>
 
