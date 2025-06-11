@@ -1,8 +1,7 @@
-<mujoco model="MyoWheelchair_v0">
-    <compiler meshdir=".."/>
+<mujocoinclude model="MyoArm_v0.2">
     <default>
         <!-- Convert the CAD coordinate system to MuJoCo -->
-        <geom type="mesh" xyaxes="1 0 0 0 1 0"/>
+        <geom type="mesh" xyaxes="1 0 0 0 1 0" conaffinity="1" contype="1"/>
     </default>
     <asset>
         <!-- ground plane for testing -->
@@ -36,59 +35,13 @@
         <mesh name="side_panel1" file="../myo_sim/meshes/Side_panel_001.stl" scale="0.001 0.001 0.001"/>
         <mesh name="side_panel2" file="../myo_sim/meshes/Side_panel_002.stl" scale="0.001 0.001 0.001"/>
     </asset>
-    <worldbody>
-        <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
-        <geom type="plane" size="3 3 .01" material="grid" pos = "0 0 -1"/>
-        <body name="static" quat="0 0 0.7071 0.7071">
-            <joint type="free"/>
-            <geom mesh="frame" material="metal"/>
-            <geom mesh="armrest1" material="orange"/>
-            <geom mesh="armrest2" material="orange"/>
-            <geom mesh="backrest" material="dark_blue"/>
-            <geom mesh="footplate1" material="grey"/>
-            <geom mesh="footplate2" material="grey"/>
-            <geom mesh="push_handle1" material="cyan"/>
-            <geom mesh="push_handle2" material="cyan"/>
-            <geom mesh="seat" material="dark_blue"/>
-            <geom mesh="side_panel1" material="metal"/>
-            <geom mesh="side_panel2" material="metal"/>
-            <body name = "right_rear_wheel" pos="-0.0635 -0.5842 -0.1524">
-                <joint name= "right_rear" axis="-1 0 0" damping=".03"/>
-                <geom mesh= "rear_wheel1" pos="0.0635 0.5842 0.1524" material="dark_grey"/>
-            </body>
-            <body name = "left_rear_wheel" pos="0.4953 -0.5842 -0.1524">
-                <joint name= "left_rear" axis="-1 0 0" damping=".03"/>
-                <geom mesh= "rear_wheel2" pos="-0.4953 0.5842 0.1524" material="dark_grey"/>
-            </body>
-            <body name = "right_fork" pos="0 -0.78105 -0.607055">
-                <joint name= "right_fork" axis="0 -1 0" damping=".03" limited="true" range="-60 60"/>
-                <geom mesh= "caster_fork1" pos="0 0.78105 0.607055" material="metal"/>
-                <geom mesh= "pin1" pos="0 0.78105 0.607055" material="metal"/>
-                <body name = "right_caster_wheel" pos="0 0 -0.049375">
-                    <joint name= "right_caster" axis="-1 0 0" damping=".03"/>
-                    <geom mesh= "caster_wheel1" pos="0 0.78105 0.65643" material="dark_grey"/>
-                </body>
-            </body>
-            <body name = "left_fork" pos="0.4318 -0.78105 -0.60563">
-                <joint name= "left_fork" axis="0 -1 0" damping=".03" limited="true" range="-60 60"/>
-                <geom mesh= "caster_fork2" pos="-0.4318 0.78105 0.60563" material="metal"/>
-                <geom mesh= "pin2" pos="-0.4318 0.78105 0.60563" material="metal"/>
-                <body name = "left_caster_wheel" pos="0 0 -0.0508">
-                    <joint name= "left_caster" axis="-1 0 0" damping=".03"/>
-                    <geom mesh= "caster_wheel2" pos="-0.4318 0.78105 0.65643" material="dark_grey"/>
-                </body> 
-            </body>
-        </body>
-    </worldbody>
-
-    <contact>
-        <exclude body1="static" body2="left_caster_wheel"/>
-        <exclude body1="static" body2="right_caster_wheel"/>
-    </contact>
     
     <actuator>
         <!-- for testing-->
+        
         <motor name = "right_rear_motor" joint="right_rear" ctrlrange="-1 1" gear="50"/>
         <motor name = "left_rear_motor" joint="left_rear" ctrlrange="-1 1" gear="50"/>
+        
     </actuator>
-</mujoco>
+
+</mujocoinclude>
