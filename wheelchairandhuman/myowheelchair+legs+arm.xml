@@ -9,9 +9,9 @@
 ====================================================== -->
 
     <include file="../scene/myosuite_scene_noPedestal.xml"/>
-    <include file="../wheelchairandhuman/myotorso_abdomen_assets.xml"/>
-    <include file="../wheelchairandhuman/myoarm_assets_for_wc.xml"/>
-    <include file="../wheelchairandhuman/myolegs_assets_for_wc.xml"/>
+    <include file="../wheelchairandhuman/assets/myotorso_abdomen_assets.xml"/>
+    <include file="../wheelchairandhuman/Wheelchairwitharm/myoarm_assets_for_wc.xml"/>
+    <include file="../wheelchairandhuman/Wheelchairwitharm/myolegs_assets_for_wc.xml"/>
     
     <!-- 
     
@@ -26,9 +26,9 @@
 
 
     <worldbody>
-        <body name="root" pos="0 0 1" euler="0 0 -1.57">
+        <body name="root" pos="0 0.5 1" euler="0 0 -1.57">
             <freejoint name="root"/>
-            <include file="../wheelchairandhuman/myotorso_abdomen_chain_for_wc.xml"/>
+            <include file="../wheelchairandhuman/Wheelchairwitharm/myotorso_abdomen_chain_for_wc.xml"/>
             <include file="../leg/assets/myolegs_chain.xml"/>
             
 
@@ -43,6 +43,7 @@
         </body>
         
     </worldbody>
+
 
 
     <!-- <keyframe>
