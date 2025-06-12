@@ -26,7 +26,7 @@
             <include file="../wheelchair/assets/myowheelchair_chain.xml"/>
             <body name="skele" pos="-0.22 -0.35 0.51" euler="0 0 -1.57">
                 <include file="../wheelchairandhuman/Wheelchairwitharm/myotorso_abdomen_chain+arm.xml"/>
-                <include file="../leg/assets/myolegs_chain.xml"/>
+                <include file="../wheelchairandhuman/assets/myolegs_chain.xml"/>
             </body>
         </body>
     </worldbody>
