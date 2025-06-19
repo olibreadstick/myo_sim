@@ -20,7 +20,7 @@
         <site name="extobl_r_extobl_r-P1" pos="-0.03 -0.0636 0.01"/>
         <site name="extobl_l_extobl_l-P1" pos="-0.03 -0.0636 -0.01"/>
 
-        <body name="torso" pos="-0.1007 0.0815 0" euler="0 0 0">
+        <body name="torso" pos="-0.1007 0.0815 0" euler="0 0 -0.4">
             <!-- <geom mesh="torso" name="torso" type="mesh" pos=".101 -1.021 -.001" euler="-1.57 0 -1.57" group="2"/> -->
 
             <geom type="capsule" class="myotorso_coll" size="0.080 0.077" pos=".036 -.020 0" euler="0 0 1.57"/>
