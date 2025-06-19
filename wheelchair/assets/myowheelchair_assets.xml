@@ -34,8 +34,24 @@
         <mesh name="seat" file="../myo_sim/meshes/Seat_001.stl" scale="0.001 0.001 0.001"/>
         <mesh name="side_panel1" file="../myo_sim/meshes/Side_panel_001.stl" scale="0.001 0.001 0.001"/>
         <mesh name="side_panel2" file="../myo_sim/meshes/Side_panel_002.stl" scale="0.001 0.001 0.001"/>
+
+        <mesh name="handrail_coll1" file="../myo_sim/meshes/handrail_coll1.obj"/>
+        <mesh name="handrail_coll2" file="../myo_sim/meshes/handrail_coll2.obj"/>
+        <mesh name="handrail_coll3" file="../myo_sim/meshes/handrail_coll3.obj"/>
+        <mesh name="handrail_coll4" file="../myo_sim/meshes/handrail_coll4.obj"/>
+        <mesh name="handrail_coll5" file="../myo_sim/meshes/handrail_coll5.obj"/>
+        <mesh name="handrail_coll6" file="../myo_sim/meshes/handrail_coll6.obj"/>
+        <mesh name="handrail_coll7" file="../myo_sim/meshes/handrail_coll7.obj"/>
+        <mesh name="handrail_coll8" file="../myo_sim/meshes/handrail_coll8.obj"/>
+        <mesh name="handrail_coll9" file="../myo_sim/meshes/handrail_coll9.obj"/>
+        <mesh name="handrail_coll10" file="../myo_sim/meshes/handrail_coll10.obj"/>
+        <mesh name="handrail_coll11" file="../myo_sim/meshes/handrail_coll11.obj"/>
+        <mesh name="handrail_coll12" file="../myo_sim/meshes/handrail_coll12.obj"/>
+        <mesh name="handrail_coll13" file="../myo_sim/meshes/handrail_coll13.obj"/>
+        <mesh name="handrail_coll14" file="../myo_sim/meshes/handrail_coll14.obj"/>
+        <mesh name="handrail_coll15" file="../myo_sim/meshes/handrail_coll15.obj"/>
+        <mesh name="handrail_coll16" file="../myo_sim/meshes/handrail_coll16.obj"/>
     </asset>
-    
     <actuator>
         <!-- for testing-->
         
