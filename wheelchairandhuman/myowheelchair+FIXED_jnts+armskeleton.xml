@@ -12,6 +12,7 @@
     <include file="../wheelchairandhuman/Wheelchairwitharm/myoskeleton with arms/assets/myoskeleton_assets.xml"/>
     <include file="../wheelchair/assets/myowheelchair_assets.xml"/>
     
+    
 
     <compiler angle="radian" meshdir=".." texturedir=".."/>
     <size memory="10M"/>
