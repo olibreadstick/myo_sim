@@ -56,6 +56,9 @@
             <body name="arm_pos_r" pos="0.021 .390 0.058" euler = "-1.65 0 1.57" >
                 <include file="../arm/assets/myoarm_body.xml"/>
             </body>
+            <body name="arm_pos_l" pos="0.021 .390 -0.058" euler = "-1.65 0 -1.57" >
+                <include file="../arm/assets/myoarm_body_left.xml"/>
+            </body>
         </body>
     </body>
 
