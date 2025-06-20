@@ -194,68 +194,68 @@
                                         </body>
 
                                         <!-- ARM-R -->
-                                        <body name="clavicle_r" pos="0.044675 -0.01807 0.025465" euler = "-0.3 0 0" >
+                                        <body name="clavicle_r" pos="0.044675 -0.01807 0.025465" euler = "-0.45 0 0" >
 
                                             <inertial diaginertia="4.3e-05   4.3e-05   1.5e-06" mass="0.156" pos="-0.011096 0.0063723 0.054168"/>
                                             <geom name="clavicle_r"  mesh="clavicle_r"  class="bone"/>
-                                            <!-- 
+                                            
                                             <joint axis="0.0153 0.989299 -0.1451" name="sternoclavicular_r2_r" pos="0 0 0" range="-0.269 0"/>
                                             <joint axis="-0.994473 0 -0.104997" name="sternoclavicular_r3_r" pos="0 0 0" range="0.0 0.322013"/>
 
-                                            -->
+                                           
                                             
                                             <body name="clavphant_r" pos="-0.01433 0.02007 0.135535">
                                                 <!-- <inertial diaginertia="0.72      0.72      0.72" mass="0.001" pos=" -0.014     0.02      0.14 "/> -->
                                                 <inertial mass="0.0001" pos="0 0 0" diaginertia="1 1 1"/>
-                                                <!-- 
+                                                
                                                 <joint axis="-0.994473 0 -0.104997" name="unrotscap_r3_r" pos="0 0 0" range="-0.116 -0.0"/>
                                                 <joint axis="0.0153 0.989299 -0.1451" name="unrotscap_r2_r" pos="0 0 0" range="0.0 0.21"/>
                                                 
-                                                -->
+                                               
                                                 <body name="scapula_r" pos="0 0 0">
                                                     <inertial diaginertia="0.00053   0.00047   0.00012" mass="0.70396" pos="-0.054694 -0.035032 -0.043734" quat="0.453021 0.77921 0.0744129 0.426692"/>
                                                     <geom name="scapula_r"  mesh="scapula_r"  class="bone"/>
-                                                    <!-- 
+                                                    
                                                     <joint axis="0.157095 0.947269 -0.279291" name="acromioclavicular_r2_r" pos="0 0 0" range="-0.01 -0.0"/>
                                                     <joint axis="-0.754084 0.297594 0.585487" name="acromioclavicular_r3_r" pos="0 0 0" range="0.0 0.34"/>
                                                     <joint axis="0.6377 0.1186 0.7611" name="acromioclavicular_r1_r" pos="0 0 0" range="0.0 0.06"/>
                                                     
-                                                    -->
+                                                   
                                                     <body name="scapphant_r" pos="-0.00955 -0.034 0.009">
                                                         <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
-                                                        <!-- 
+                                                        
                                                         <joint axis="0.6377 0.1186 0.7611" name="unrothum_r1_r" pos="0 0 0" range="-0.466003 -0.0"/>
                                                         <joint axis="-0.754084 0.297594 0.585487" name="unrothum_r3_r" pos="0 0 0" range="-1.03673 -0.0"/>
                                                         <joint axis="0.157095 0.947269 -0.279291" name="unrothum_r2_r" pos="0 0 0" range="0.0 0.128282"/>
                                                        
-                                                        -->
+                                                       
                                                         
                                                          <body name="humphant_r" pos="0 0 0">
                                                             <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
-                                                            <!-- 
+                                                            
                                                             <joint name="elv_angle_r" range="-1.65806 2.26893" limited="true" axis="0.0048 0.999089 0.0424" type="hinge"/>
                                                             
-                                                            -->
+                                                           
                                                             <body name="humphant1_r" pos="0 0 0">
                                                                 <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
-                                                                <!-- 
+                                                                
                                                                 <joint name="shoulder_elv_r" range="0 3.14159" limited="true" axis="-0.998261 0.0023 0.058898" type="hinge"/>
                                                                 <joint name="shoulder1_r2_r" pos="0 0 0" range="-2.242 1.5708" user="-0.251642" axis="0.00479995 0.999089 0.0423995"/>
                                                                 
-                                                                -->
+                                                               
                                                                 <body name="humerus_r" pos="0 0 0">
                                                                     <geom name="humerus_r"  mesh="humerus_r" class="bone"></geom>
-                                                                    <!-- 
+                                                                    
                                                                     <joint axis="0.00479995 0.999089 0.0423995" name="shoulder_rot_r" pos="0 0 0" range="-1.571 2.094" user="0.161391"/>
                                                                     
-                                                                    -->
+                                                                   
                                                                     <geom name="humerus_r_coll" type="capsule" class="myo_coll" size="0.042 0.140" pos="0 -.13 0" euler="1.57 0 0"/>
                                                                     <body name="ulna_r" pos="0.0061 -0.2904 -0.0123">
                                                                         <geom mesh="ulna_r" name="ulna_r" class="bone"/>
-                                                                        <!-- 
+                                                                        
                                                                         <joint name="elbow_flex_r" type="hinge" pos="0 0 0" axis="0.226047 0.022269 0.973862" range="0 2.618"/>
                                                                         
-                                                                        -->
+                                                                       
                                                                         <geom name="ulna_r_coll" class="myo_coll" size="0.015" fromto="-.02 0 .005 .005 -0.2 0.04"/>
                                                                         <body name="radius_r" pos="0.0004 -0.011503 0.019999">
                                                                             <geom name="radius_r_coll" type="capsule" class="myo_coll" size="0.030" fromto="0 0 0 0.015 -0.235841 0.028" euler="1.4 0.1 0.12"/>
@@ -264,21 +264,21 @@
                                                                             <camera name="hand_side_inter" pos="0.5 -0.3 0" euler="1.57 1.57 0"/>
                                                                             <camera name="hand_side_exter" pos="-0.5 -0.3 0" euler="1.57 -1.57 0"/>
 
-                                                                            <!-- 
+                                                                            
                                                                             <joint axis="-0.017161 0.992666 -0.119668" name="pro_sup" pos="0 0 0" range="-1.5708 1.5708"/>
                                                                             
-                                                                            -->
+                                                                           
                                                                             <geom name="radius_r_coll_2" class="myo_coll" size="0.02" fromto="0.015 0 -.005 0.025 -0.24 0.025"/>
                                                                             <geom name="radius_r_coll_3" class="myo_coll" size="0.02" fromto="-.01 0 -.010 0.015 -0.24 0.025"/>
 
                                                                             <geom mesh="radius_r" name="radius_r" class="bone"/>
                                                                             <body name="lunate_r" pos="0.018 -0.242 0.025">
                                                                                 <site name="s_wrist_r" class="myo_marker" pos="0 0 0"/>
-                                                                                <!-- 
+                                                                                
                                                                                 <joint axis="0 0 1" name="deviation" pos="0 0 0" range="-0.174533 0.436332"/>
                                                                                 <joint axis="1 0 0" name="flexion_r" pos="0 0 0" range="-0.785398 0.785398"/>
                                                                                 
-                                                                                -->
+                                                                               
                                                                                 <geom mesh="lunate_r" name="lunate_r" class="bone"/>
                                                                                 <frame name="scaphoid_r" pos="0.012345 -0.004464 -0.001254">
                                                                                     <geom mesh="scaphoid_r" name="scaphoid_r" class="bone"/>
@@ -300,25 +300,25 @@
 
                                                                                         <!-- THUMB FINGER -->
                                                                                         <body name="firstmc_r" pos="0.0072 -0.0054 -0.0025">
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint axis="-0.042399 -0.665286 0.745384" name="cmc_flexion_r" pos="0 0 0" range="-0.5 0.78"/>
                                                                                             <joint axis="0.495557 0.731736 0.467959" name="cmc_abduction_r" pos="0 0 0" range="-0.78 0.7"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             <geom mesh="1mc_r" name="1mc_r" class="bone"/>
                                                                                             <geom name="1mcskin_coll" class="myo_coll" size="0.0095" fromto="-.002 0.004 0.003 0.0165 -0.0292 -0.0127"/>
                                                                                             <body name="proximal_thumb_r" pos="0.0165 -0.0292 -0.0127">
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint axis="-0.084295 -0.203488 0.975442" name="mp_flexion_r" pos="0 0 0" range="-0.785398 0.698132"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <geom mesh="thumbprox_r" name="thumbprox_r" class="bone"/>
                                                                                                 <geom name="proximal_thumb_r_coll" class="myo_coll" size="0.0085" fromto="0 0 0 0.014 -0.0259 -0.0101"/>
                                                                                                 <body name="distal_thumb_r" pos="0.014 -0.0259 -0.0101">
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint axis="-0.050102 -0.479623 0.876043" name="ip_flexion_r" pos="0 0 0" range="-1.309 0.436332"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom mesh="thumbdist_r" name="thumbdist_r" class="bone"/>
                                                                                                     <geom name="distal_thumb_r_coll" class="myo_coll" size="0.0065" fromto="0 0 0 0.010 -0.018 -0.007"/>
                                                                                                     <geom name="distal_thumb_r_coll_2" class="myo_coll" type="ellipsoid" size=".007 .0055 .002" pos=".015 -.018 -.007" euler="0.2 1.57 1.5" rgba="1 1 1 .8"/>
@@ -339,25 +339,25 @@
                                                                                         <geom mesh="2mc_r" name="2mc_r" class="bone"/>
                                                                                         <geom name="2mcskin_coll" class="myo_coll" size="0.010 0.028" euler="1.42 0.15 -.1"/>
                                                                                         <body name="2proxph_r" pos="0.003501 -0.028243 0.00362">
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint axis="0.995013 0.09975 0" name="mcp2_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                             <joint axis="-0.054999 0.085899 0.994785" name="mcp2_abduction_r" pos="0 0 0" range="-0.261799 0.261799"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             <geom mesh="2proxph_r" name="2proxph" class="bone"/>
                                                                                             <geom name="proxph2_r_coll" class="myo_coll" size="0.009 0.020" pos="0.004 -0.0210 0.00362" euler="1.45 0.15 -.35"/>
                                                                                             <body name="2midph_r" pos="0.00751 -0.041273 0.007326">
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint axis="0.97517 0.0998334 -0.197677" name="pm2_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <geom mesh="2midph_r" name="2midph" class="bone"/>
                                                                                                 <geom name="midph2_r_coll" class="myo_coll" size="0.008 0.012" pos="0.0013 -0.012 0.00" euler="1.5 0.14 -.35"/>
                                                                                                 <body name="2distph_r" pos="0.003333 -0.024888 0.00122">
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint axis="0.995004 0.0998334 0" name="md2_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     
                                                                                                     <geom mesh="2distph_r" name="2distph_r" class="bone"/>
                                                                                                     <geom name="distph2_r_coll" class="myo_coll" size="0.007 0.008" pos="0.001 -0.008 0.00" euler="1.5 0.14 -.35"/>
@@ -373,29 +373,29 @@
                                                                                         <geom name="3mcskin_coll" class="myo_coll" size="0.010 0.028" euler="1.42 0.01 0" pos="0 0 0"/>
 
                                                                                         <body name="3proxph_r" pos="0.00024 -0.02629 0.001778">
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint axis="0.980067 0 0.198669" name="mcp3_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                             <joint axis="-0.198669 0 0.980067" name="mcp3_abduction_r" pos="0 0 0" range="-0.261799 0.261799"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             
                                                                                             <geom mesh="3proxph_r" name="3proxph_r" class="bone"/>
 
                                                                                             <geom name="proxph3_r_coll" class="myo_coll" size="0.009 0.022" pos="0.001 -0.022 0.004" euler="1.5 0.045 -.35"/>
 
                                                                                             <body name="3midph_r" pos="0.00165 -0.044211 0.00623">
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint axis="1 0 0" name="pm3_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <geom mesh="3midph_r" name="3midph_r" class="bone"/>
                                                                                                 <geom name="midph3_r_coll" class="myo_coll" size="0.008 0.014" pos="0.0012 -0.014 0.00" euler="1.55 0.06 -.35"/>
 
                                                                                                 <body name="3distph_r" pos="0.001365 -0.029047 0.001954">
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint axis="1 0 0" name="md3_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom mesh="3distph_r" name="3distph_r" class="bone"/>
                                                                                                     <geom name="distph3_r_coll" class="myo_coll" size="0.007 0.008" pos="0.0013 -0.009 -.002" euler="1.6 .05 0"/>
                                                                                                     <geom name="distph3_r_coll_2" class="myo_coll" type="ellipsoid" size=".0055 .008 .002" pos="0.002 -.019 0.003" euler="0.2 0 0.0" rgba="1 1 1 .8"/>
@@ -412,25 +412,25 @@
 
 
                                                                                         <body name="4proxph_r" pos="-0.00183 -0.023689 -0.000173">
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint axis="0.900447 0 0.434966" name="mcp4_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                             <joint axis="-0.434966 0 0.900447" name="mcp4_abduction_r" pos="0 0 0" range="-0.261799 0.261799"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             <geom mesh="4proxph_r" name="4proxph_r" class="bone"/>
                                                                                             <geom name="proxph4_r_coll" class="myo_coll" size="0.0085 0.018" pos="-.001 -0.0200 .0008" euler="1.57 -.08 0"/>
                                                                                             <body name="4midph_r" pos="-0.003528 -0.040255 0.001345">
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint axis="0.921061 0 0.389418" name="pm4_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <geom mesh="4midph_r" name="4midph_r" class="bone"/>
                                                                                                 <geom name="midph4_r_coll" class="myo_coll" size="0.0075 0.01" pos="-.00 -0.012 -.001" euler="1.58 -.08 0"/>
                                                                                                 <body name="4distph_r" pos="-0.002317 -0.024789 0.000563">
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint axis="0.825336 0 0.564642" name="md4_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom mesh="4distph_r" name="4distph_r" class="bone"/>
                                                                                                     <geom name="distph4_r_coll" class="myo_coll" size="0.0068 0.008" pos="0.00 -0.01 -.002" euler="1.6 -.1 0"/>
                                                                                                     <geom name="distph4_r_coll_2" class="myo_coll" type="ellipsoid" size=".005 .008 .002" pos="-.004 -.019 0.003" euler="0.2 -.5 0.0" rgba="1 1 1 .8"/>
@@ -443,25 +443,25 @@
                                                                                         <geom mesh="5mc_r" name="5mc_r" class="bone"/>
                                                                                         <geom name="5mcskin_coll" class="myo_coll" size="0.0095 0.024" euler="1.6 -.13 0" pos=".001 0.002 -.001"/>
                                                                                         <body name="5proxph_r" pos="-0.001597 -0.021431 -0.001496">
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint axis="0.825336 0 0.564642" name="mcp5_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                             <joint axis="-0.564642 0 0.825336" name="mcp5_abduction_r" pos="0 0 0" range="-0.261799 0.261799"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             <geom mesh="5proxph_r" name="5proxph_r" class="bone"/>
                                                                                             <geom name="proxph5_r_coll" class="myo_coll" size="0.008 0.016" pos="-.003 -0.018 -.002" euler="1.68 -.1 0"/>
                                                                                             <body name="5midph_r" pos="-0.005279 -0.035563 -0.002879">
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint axis="0.825336 0 0.564642" name="pm5_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <geom mesh="5midph_r" name="5midph_r" class="bone"/>
                                                                                                 <geom name="midph5_r_coll" class="myo_coll" size="0.007 0.009" pos="-.001 -0.011 -.0025" euler="1.68 -.12 0"/>
                                                                                                 <body name="5distph_r" pos="-0.002871 -0.020677 -0.002243">
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint axis="0.643112 -0.226804 0.731414" name="md5_flexion_r" pos="0 0 0" range="0 1.5708"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom mesh="5distph_r" name="5distph_r" class="bone"/>
                                                                                                     <geom name="distph5_r_coll" class="myo_coll" size="0.006 0.007" pos="-.0002 -0.009 -.002" euler="1.65 -.1 0"/>
                                                                                                     <geom name="distph5_r_coll_2" class="myo_coll" type="ellipsoid" size=".0045 .006 .002" pos="-.005 -.018 0.000" euler="0.2 -.8 0.0" rgba="1 1 1 .8"/>
@@ -482,78 +482,78 @@
                                         </body>
 
                                         <!-- ARM-L -->
-                                        <body name="clavicle_l" pos="0.044675 -0.01807 -0.025465" euler= " 0.3 0 0">
+                                        <body name="clavicle_l" pos="0.044675 -0.01807 -0.025465" euler= " 0.45 0 0">
                                             <inertial mass="0.156" pos="-0.011096 0.0063723 -0.0541680" diaginertia="4.3e-05   4.3e-05   1.5e-06"/>
-                                            <!-- 
+                                            
                                             <joint axis="-0.0153 -0.989299 -0.1451" name="sternoclavicular_r2_l" pos="0 0 0" range="-0.269 -0.0"/>
                                             <joint axis="0.994473 0 -0.104997" name="sternoclavicular_r3_l" pos="0 0 0" range="0.0 0.322013"/>
                                             
-                                            -->
+                                           
                                             <geom name="clavicle_l"  mesh="clavicle_l"  class="bone"/>
                                             <body name="clavphant_l" pos="-0.01433 0.02007 -0.135535">
                                                 <inertial mass="0.0001" pos="0 0 0" diaginertia="1 1 1"/>
-                                                <!-- 
+                                                
                                                 <joint axis="0.994473 0 -0.104997" name="unrotscap_r3_l" pos="0 0 0" range="-0.116 -0.0"/>
                                                 <joint axis="-0.0153 -0.989299 -0.1451" name="unrotscap_r2_l" pos="0 0 0" range="0.0 0.21"/>
                                                 
-                                                -->
+                                               
                                                 <body name="scapula_l" pos="0 0 0">
                                                     <inertial diaginertia="0.00053   0.00047   0.00012" mass="0.70396" pos="-0.054694 -0.035032 0.043734" quat="0.453021 0.77921 0.0744129 0.426692"/>
-                                                    <!-- 
+                                                    
                                                     <joint axis="-0.157095 -0.947269 -0.279291" name="acromioclavicular_r2_l" pos="0 0 0" range="-0.01 -0.0"/>
                                                     <joint axis="0.754084 -0.297594 0.585487" name="acromioclavicular_r3_l" pos="0 0 0" range="0.0 0.34"/>
                                                     <joint axis="-0.6377 -0.1186 0.7611" name="acromioclavicular_r1_l" pos="0 0 0" range="0.0 0.06"/>
                                                    
-                                                    -->
+                                                   
                                                     
                                                      <geom name="scapula_l"  mesh="scapula_l"  class="bone"/>
                                                     <body name="scapphant_l" pos="-0.00955 -0.034 -0.009">
                                                         <inertial mass="0.0001" pos="0 0 0" diaginertia="1 1 1"/>
-                                                        <!-- 
+                                                        
                                                         <joint axis="-0.6377 -0.1186 0.7611" name="unrothum_r1_l" pos="0 0 0" range="-0.466003 -0.0"/>
                                                         <joint axis="0.754084 -0.297594 0.585487" name="unrothum_r3_l" pos="0 0 0" range="-1.03673 -0.0"/>
                                                         <joint axis="-0.157095 -0.947269 -0.279291" name="unrothum_r2_l" pos="0 0 0" range="0.0 0.128282"/>
                                                         
-                                                        -->
+                                                       
                                                         <body name="humphant_l" pos="0 0 0">
                                                             <inertial mass="0.0001" pos="0 0 0" diaginertia="1 1 1"/>
-                                                            <!-- 
+                                                            
                                                              <joint name="elv_angle_l" range="-1.65806 2.26893" limited="true" axis="-0.0048 -0.999089 0.0424" type="hinge"/>
                                                            
-                                                            -->
+                                                           
                                                             <body name="humphant1_l" pos="0 0 0">
                                                                 <inertial mass="0.0001" pos="0 0 0" diaginertia="1 1 1"/>
-                                                                <!-- 
+                                                                
                                                                 <joint name="shoulder_elv_l" range="0 3.14159" limited="true" axis="0.998261 -0.0023 0.058898" type="hinge"/>
                                                                 <joint name="shoulder1_r2_l" pos="0 0 0" range="-2.242 1.5708" user="-0.251642" axis="-0.00479995 -0.999089 0.0423995"/>
                                                                 
-                                                                -->
+                                                               
                                                                 <body name="humerus_l" pos="0 0 0">
                                                                     <geom name="humerus_l"  mesh="humerus_l" class="bone"></geom>
-                                                                    <!-- 
+                                                                    
                                                                     <joint name="shoulder_rot_l" range="-1.5708 2.0944" limited="true" axis="-0.0048 -0.999089 0.0424" type="hinge"/>
                                                                     
-                                                                    -->
+                                                                   
                                                                     <body name="ulna_l" pos="0.0061 -0.290401 0.0123">
                                                                         <geom name="ulna_l"  mesh="ulna_l" class="bone"/>
-                                                                        <!-- 
+                                                                        
                                                                         <joint name="elbow_flex_l" range="0 2.26893" axis="-0.0494 -0.0366 0.998108" type="hinge"/>
                                                                         
-                                                                        -->
+                                                                       
                                                                         <body name="radius_l" pos="0.0004 -0.0115 -0.02">
                                                                             <geom name="radius_l"  mesh="radius_l" class="bone"/>
-                                                                            <!-- 
+                                                                            
                                                                             <joint name="pro_sup_l" range="-1.5708 1.7708" axis="0.017161 -0.992666 -0.119668" type="hinge"/>
                                                                             
-                                                                            -->
+                                                                           
                                                                             <body name="lunate_l" pos="0.018 -0.242 -0.025">
                                                                                 <site name="s_wrist_l" class="myo_marker" pos="0 0 0"/>
                                                                                 <geom name="lunate_l"  mesh="lunate_l" class="bone"/>
-                                                                                <!-- 
+                                                                                
                                                                                 <joint name="deviation_l" range="-0.785398 0.785398" axis="0 0 1" type="hinge"/>
                                                                                 <joint name="flexion_l" range="-0.785398 0.785398" axis="-1 0 0" type="hinge"/>
                                                                                 
-                                                                                -->
+                                                                               
                                                                                 <frame name="scaphoid_l" pos="0.012345 -0.00446402 0.001254">
                                                                                     <inertial mass="0.02" pos="0 0 0" diaginertia="4.9e-08   4.5e-08   1.4e-08"/>
                                                                                     <geom name="scaphoid_l"  mesh="scaphoid_l" class="bone"/>
@@ -571,27 +571,27 @@
                                                                                     <frame name="trapezium_l" pos="0.015293 -0.00456901 0.010308">
                                                                                         <geom name="trapezium_l"  mesh="trapezium_l" class="bone"/>
                                                                                         <body name="firstmc_l" pos="0.00662516 -0.00496888 0.0023004">
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint name="cmc_flexion_l" range="-0.5 0.78" axis="0.042399 0.665286 0.745384" type="hinge"/>
                                                                                             <joint name="cmc_abduction_l" range="-0.78 0.7" axis="-0.495557 -0.731736 0.467959" type="hinge"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             
                                                                                             <geom name="firstmc_l"  mesh="1mc_l" class="bone"/>
                                                                                             <body name="proximal_thumb_l" pos="0.0165 -0.0292 0.0127">
 
                                                                                                 <geom name="proximal_thumb_l"  mesh="thumbprox_l" class="bone"/>
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint name="mp_flexion_l" range="-0.780796 0" axis="0.084295 0.203488 0.975442" type="hinge"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <body name="distal_thumb_l" pos="0.014 -0.0259 0.0101">
 
                                                                                                     <geom name="distal_thumb_l"  mesh="thumbdist_l" class="bone"/>
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint name="ip_flexion_l" range="-1.22173 0" axis="0.050102 0.479623 0.876043" type="hinge"/>
 
-                                                                                                    -->
+                                                                                                   
                                                                                                     
                                                                                                     <geom name="coll_distal_thumb_l_0" class="myo_coll" type="capsule" size="0.0065 0.01087 0" pos="0.005 -0.009 0.0035" quat="0.813 0.509 0.2828 0"/>
                                                                                                     <geom name="coll_distal_thumb_l_1" class="myo_coll" type="ellipsoid" size="0.007 0.0055 0.002" pos="0.015 -0.018 0.007" quat="0.4669 -0.5311 -0.4665 0.5314" rgba="1 1 1 .8"/>
@@ -614,25 +614,25 @@
                                                                                         <body name="2proxph_l" pos="0.00350099 -0.0282431 -0.00362002">
 
                                                                                             <geom name="2proxph_l"  mesh="2proxph_l" class="bone"/>
-                                                                                            <!-- 
+                                                                                            
                                                                                              <joint name="mcp2_flexion_l" range="-0.349066 1.74533" axis="-0.983831 -0.133009 -0.119936" type="hinge"/>
                                                                                             <joint name="mcp2_abduction_l" range="-0.790659 0.349066" axis="-0.0998334 -0.148692 0.983831" type="hinge"/>
                                                                                            
-                                                                                            -->
+                                                                                           
                                                                                             
                                                                                             <body name="2midph_l" pos="0.00751701 -0.041273 -0.00732601">
 
                                                                                                 <geom name="2midph_l"  mesh="2midph_l" class="bone"/>
-                                                                                               <!-- 
+                                                                                               
                                                                                                <joint name="pm2_flexion_l" range="0 2.0944" axis="-0.983831 -0.133009 -0.119936" type="hinge"/>
                                                                                                 
-                                                                                               -->
+                                                                                              
                                                                                                 <body name="2distph_l" pos="0.00333301 -0.024888 -0.00122001">
                                                                                                     <geom name="2distph_l"  mesh="2distph_l" class="bone"/>
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint name="md2_flexion_l" range="-0.349066 1.74533" axis="-0.983831 -0.133009 -0.119936" type="hinge"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom name="coll_2distph_l_0" class="myo_coll" type="capsule" size="0.007 0.008 0" pos="0.001 -0.008 0" quat="0.727 -0.6607 -0.1688 -0.08013"/>
                                                                                                     <geom name="coll_2distph_l_1" class="myo_coll" type="ellipsoid" size="0.005 0.008 0.002" pos="0.003 -0.018 -0.0055" quat="0.9906 -0.1032 -0.04212 0.07944" rgba="1 1 1 .8"/>
                                                                                                 </body>
@@ -647,24 +647,24 @@
                                                                                         <body name="3proxph_l" pos="0.000239995 -0.0262901 -0.00177801">
 
                                                                                             <geom name="3proxph_l"  mesh="3proxph_l" class="bone"/>
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint name="mcp3_flexion_l" range="-0.872665 1.5708" axis="-0.99955 -0.0298996 -0.00239708" type="hinge"/>
                                                                                             <joint name="mcp3_abduction_l" range="-0.749066 0.349066" axis="-2.1684e-19 -0.0799147 0.996802" type="hinge"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             <body name="3midph_l" pos="0.00165 -0.044211 -0.00623001">
 
                                                                                                 <geom name="3midph_l"  mesh="3midph_l" class="bone"/>
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint name="pm3_flexion_l" range="0 2.0944" axis="-0.99955 -0.0298996 -0.00239708" type="hinge"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <body name="3distph_l" pos="0.00136499 -0.029047 -0.001954">
                                                                                                     <geom name="3distph_l"  mesh="3distph_l" class="bone"/>
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint name="md3_flexion_l" range="-0.349066 1.74533" axis="-0.99955 -0.0298996 -0.00239708" type="hinge"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom name="coll_3distph_l_0" class="myo_coll" type="capsule" size="0.007 0.008 0" pos="0.0013 -0.009 0.002" quat="0.6965 -0.7171 -0.01742 0.01793"/>
                                                                                                     <geom name="coll_3distph_l_1" class="myo_coll" type="ellipsoid" size="0.0055 0.008 0.002" pos="0.002 -0.019 -0.003" quat="0.995 -0.09983 0 0" rgba="1 1 1 .8"/>
                                                                                                 </body>
@@ -679,24 +679,24 @@
                                                                                         <body name="4proxph_l" pos="-0.00183 -0.023689 0.000173026" euler="0.0216325 -0.299243 0.00326117">
 
                                                                                             <geom name="4proxph_l"  mesh="4proxph_l" class="bone"/>
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint name="mcp4_flexion_l" range="-0.872665 1.5708" axis="-0.918805 0.0504403 0.391475" type="hinge"/>
                                                                                             <joint name="mcp4_abduction_l" range="-0.749066 0.349066" axis="0.389418 -0.0460339 0.91991" type="hinge"/>
 
-                                                                                            -->
+                                                                                           
                                                                                             
                                                                                             <body name="4midph_l" pos="-0.00352801 -0.040255 -0.001345">
                                                                                                 <geom name="4midph_l"  mesh="4midph_l" class="bone"/>
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint name="pm4_flexion_l" range="0 2.0944" axis="-0.918805 0.0504403 0.391475" type="hinge"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <body name="4distph_l" pos="-0.002317 -0.024789 -0.000563001">
                                                                                                     <geom name="4distph_l"  mesh="4distph_l" class="bone"/>
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint name="md4_flexion_l" range="-0.349066 1.74533" axis="-0.918805 0.0504403 0.391475" type="hinge"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom name="coll_4distph_l_0" class="myo_coll" type="capsule" size="0.0068 0.008 0" pos="0 -0.01 0.002" quat="0.6958 -0.7165 0.03482 -0.03585"/>
                                                                                                     <geom name="coll_4distph_l_1" class="myo_coll" type="ellipsoid" size="0.005 0.008 0.002" pos="-0.004 -0.019 -0.003" quat="0.9641 -0.09673 0.2462 -0.0247" rgba="1 1 1 .8"/>
                                                                                                 </body>
@@ -711,23 +711,23 @@
 
                                                                                         <body name="5proxph_l" pos="-0.00159703 -0.021431 0.00149602" euler="0.0461937 -0.296528 0.00690071">
                                                                                             <geom name="5proxph_l"  mesh="5proxph_l" class="bone"/>
-                                                                                            <!-- 
+                                                                                            
                                                                                             <joint name="mcp5_flexion_l" range="-0.872665 1.5708" axis="-0.867728 0.149438 0.474042" type="hinge"/>
                                                                                             <joint name="mcp5_abduction_l" range="-0.4 0.349066" axis="0.479426 -6.93889e-18 0.877583" type="hinge"/>
                                                                                             
-                                                                                            -->
+                                                                                           
                                                                                             <body name="5midph_l" pos="-0.00527899 -0.0355629 0.00287898">
                                                                                                 <geom name="5midph_l"  mesh="5midph_l" class="bone"/>
-                                                                                                <!-- 
+                                                                                                
                                                                                                 <joint name="pm5_flexion_l" range="0 2.0944" axis="-0.867728 0.149438 0.474042" type="hinge"/>
                                                                                                 
-                                                                                                -->
+                                                                                               
                                                                                                 <body name="5distph_l" pos="-0.002871 -0.020677 0.002243">
                                                                                                     <geom name="5distph_l"  mesh="5distph_l" class="bone"/>
-                                                                                                    <!-- 
+                                                                                                    
                                                                                                     <joint name="md5_flexion_l" range="-0.349066 1.74533" axis="-0.867728 0.149438 0.474042" type="hinge"/>
                                                                                                     
-                                                                                                    -->
+                                                                                                   
                                                                                                     <geom name="coll_5distph_l_0" class="myo_coll" type="capsule" size="0.006 0.007 0" pos="-0.0002 -0.009 0.002" quat="0.6777 -0.7336 0.03391 -0.03671"/>
                                                                                                     <geom name="coll_5distph_l_1" class="myo_coll" type="ellipsoid" size="0.0045 0.006 0.002" pos="-0.005 -0.018 0" quat="0.9165 -0.09195 0.3875 -0.03888" rgba="1 1 1 .8"/>
                                                                                                 </body>
