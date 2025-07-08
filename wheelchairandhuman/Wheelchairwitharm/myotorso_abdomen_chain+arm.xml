@@ -54,7 +54,7 @@
             <site name="thoracis_spine" pos="-.018 .194 0" class="myotorso_marker"/>
             <site name="chest" pos="0.084 0.221 0" class="myotorso_marker"/>
             <body name="arm_pos" pos="0.021 .390 0.058" euler = "-1.57 0 1.57" >
-                <include file="../wheelchairandhuman/Wheelchairwitharm/myoarm_body_for_wc.xml"/>
+                <include file="../../../../simhive/myo_sim/wheelchairandhuman/Wheelchairwitharm/myoarm_body_for_wc.xml"/>
             </body>
         </body>
     </body>

@@ -52,12 +52,12 @@
         <mesh name="handrail_coll15" file="../myo_sim/meshes/handrail_coll15.obj"/>
         <mesh name="handrail_coll16" file="../myo_sim/meshes/handrail_coll16.obj"/>
     </asset>
-    <actuator>
-        <!-- for testing-->
+    <!-- <actuator>
+        
         
         <motor name = "right_rear_motor" joint="right_rear" ctrlrange="-1 1" gear="50"/>
         <motor name = "left_rear_motor" joint="left_rear" ctrlrange="-1 1" gear="50"/>
         
-    </actuator>
+    </actuator> -->
 
 </mujocoinclude>

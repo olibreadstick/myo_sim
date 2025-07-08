@@ -676,6 +676,7 @@
                                                 </body>
                                                 <!-- MIDDLE FINGER -->
                                                 <body name="thirdmc" pos="0.000477 -0.039239 0.007377">
+                                                    <site name="palm_r" pos="0 0 0" size="0.05" rgba="1 0 0 0"/>
                                                     <geom name="3mcskin" class="myohand_coll" size="0.010 0.028" euler="1.42 0.01 0" pos="0 0 0"/>
                                                     <inertial pos="0 0 0" mass="0.02" fullinertia="0.0001 0.0001 0.0001 0 0 0"/>
                                                     <geom mesh="3mc" name="3mc" type="mesh"/>
