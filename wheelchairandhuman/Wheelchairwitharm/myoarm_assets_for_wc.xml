@@ -80,7 +80,6 @@
         <mesh file="../myo_sim/meshes/scaphoid.stl" name="proximal_row_geom_2_sdfastSCAPHOIDw"/>
         <mesh file="../myo_sim/meshes/pisiform.stl" name="proximal_row_geom_3_sdfastPISIFORMw"/>
         <mesh file="../myo_sim/meshes/triquetrum.stl" name="proximal_row_geom_4_sdfastTRIQUETRALw"/>
-
         <mesh name="thorax" file="../myo_sim/meshes/thorax.stl" scale="1 1 1"/>
         <mesh name="clavicle" file="../myo_sim/meshes/clavicle.stl" scale="1 1 1"/>
         <mesh name="scapula" file="../myo_sim/meshes/scapula.stl" scale="1 1 1"/>
