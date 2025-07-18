@@ -37,7 +37,8 @@
             <geom mesh="torso_geom_1_hat_spine" name="torso_geom_1" type="mesh"/>
             <geom mesh="torso_geom_2_hat_jaw" name="torso_geom_2" type="mesh"/>
             <geom mesh="torso_geom_3_hat_skull" name="torso_geom_3" type="mesh"/>
-            <geom mesh="torso_geom_4_hat_ribs" name="torso_geom_4" type="mesh"/>
+            <geom mesh="torso_geom_4_hat_ribs_no_scapcla" name="torso_geom_4_hat_ribs_no_scapcla" type="mesh"/>
+
 
             <site name="ercspn_r_ercspn_r-P2" pos="-0.055 0.11 0.0241"/>
             <site name="ercspn_l_ercspn_l-P2" pos="-0.055 0.11 -0.0241"/>
@@ -53,11 +54,11 @@
             <site name="spine_1" pos="0.030 0 0" class="myotorso_marker"/>
             <site name="thoracis_spine" pos="-.018 .194 0" class="myotorso_marker"/>
             <site name="chest" pos="0.084 0.221 0" class="myotorso_marker"/>
-            <body name="arm_pos_r" pos="0.021 .390 0.058" euler = "-1.65 0 1.57" >
-                <include file="../arm/assets/myoarm_body.xml"/>
+            <body name="arm_pos" pos="-0.01 0.376 0.025" euler = "-1.57 -0.1 1.57" >
+                <include file="../../../../simhive/myo_sim/wheelchairandhuman/Wheelchairwitharm/myoarm_body_for_wc.xml"/>
             </body>
-            <body name="arm_pos_l" pos="0.021 .390 -0.058" euler = "-1.65 0 -1.57" >
-                <include file="../arm/assets/myoarm_body_left.xml"/>
+            <body name="arm_pos_l" pos="0.021 .390 -0.025" euler = "-1.65 0 1.57" >
+                <include file="../../../../simhive/myo_sim/wheelchairandhuman/Wheelchairwitharm/myoarm_body_for_wc_left.xml"/>
             </body>
         </body>
     </body>
