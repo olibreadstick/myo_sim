@@ -41,6 +41,8 @@
             <site name="wheelchair_grip_left" pos="-0.0371 0.27 0.05" size="0.005" rgba="0 1 0 0.5"/>
         </body>
         <site name="hand_start_right" pos="0.5324 -0.3142 -0.1024" size="0.008" rgba="1 0 0 1"/>
+        <site name="hand_TARGET_right" pos="0.5324 -0.4542 -0.395" size="0.008" rgba="0 0 1 1"/>
+
         <body name = "right_rear_wheel" pos="0.4953 -0.5842 -0.1524">
             <joint name= "right_rear" axis="-1 0 0" damping=".03"/>
             <geom mesh= "rear_wheel2" pos="-0.4953 0.5842 0.1524" material="dark_grey" conaffinity="0" contype="0"/>
