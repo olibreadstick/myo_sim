@@ -46,22 +46,24 @@
             <geom mesh= "rear_wheel2" pos="-0.4953 0.5842 0.1524" material="dark_grey" conaffinity="0" contype="0"/>
             <geom name = "right_rear_coll" type="cylinder" size="0.3048" fromto="-0.0127 0 0 0.0127 0 0" rgba="1 0 0 0"/>
             <!-- <geom name = "right_handrail_coll" type="cylinder" pos = "0.038 0 0" size="0.2762 0.0082" euler="0 1.5708 0" rgba="0 0 1 0"/> -->
-            <geom mesh="handrail_coll1" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll2" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll3" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll4" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll5" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll6" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll7" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll8" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll9" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll10" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll11" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll12" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll13" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll14" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll15" pos="0.0371 0 0" rgba="0 0 1 0"/>
-            <geom mesh="handrail_coll16" pos="0.0371 0 0" rgba="0 0 1 0"/>
+            <body name = "right_handrail" pos="0.0371 0 0">
+                <geom mesh="handrail_coll1" pos="0 0 0" rgba="0 0 1 1"/>
+                <geom mesh="handrail_coll2" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll3" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll4" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll5" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll6" pos="0. 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll7" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll8" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll9" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll10" pos="0. 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll11" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll12" pos="0. 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll13" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll14" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll15" pos="0 0 0" rgba="0 0 1 0"/>
+                <geom mesh="handrail_coll16" pos="0 0 0" rgba="0 0 1 0"/>
+            </body>    
             
             <site name="wheelchair_grip_right" pos="0.0371 0.27 0.05" size="0.005" rgba="0 1 0 1"/>
             <site name="rail_bottom_right" pos="0.0371 0.25 0.05" size="0.005" rgba="0 0 1 1"/>
